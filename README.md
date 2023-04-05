@@ -78,7 +78,7 @@ window.addEventListener("load", () => {
 - ITEM_ID
     - This scenario uses the URL of the item as `ITEM_ID`
 
-The following scenario assumes that Google analytics is enabled and the Google tag is added to the website.
+-  Google analytics to be enabled and the Google tag added to the website.
 1. Open the Google Tag Manager menu
 2. Create a new tag with **Custom HTML** as the configuration.
 3. Paste the following code:

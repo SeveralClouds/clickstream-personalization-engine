@@ -6,8 +6,7 @@ fetch("https://m.sevc.link/recommendations", {
     })
 }).then(function (res) { return res.json() })
     .then(function (res) {
-        res["recommendations"].forEach(function (item) {
-            console.log(item)
-            //handler(item)
-        })
+        //res["recommendations"] -> array of the ids of the recommended items with their recommendation score sorted in descending order
+        handler(res["recommendations"])
+        
     })
