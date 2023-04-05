@@ -4,7 +4,7 @@
 AWS Personalize is an ML-based service that uses data to generate personalized recommendations. 
 The current Personalize solution requires three parameters for each interaction to work:
 1. USER_ID
-    - For `USER_ID` this solution uses the `_ga` cookie
+    - For `USER_ID` this solution uses the `_ga` cookie. The `_ga` cookie lasts for 2 years.
 2. ITEM_ID
     - The proposed in the scenario below `ITEM_ID` is the URL of the item.
 3. TIMESTAMP
@@ -74,7 +74,7 @@ window.addEventListener("load", () => {
 ### Scenario for using the solution
 #### Prerequisites
 - USER_ID
-    - Google analytics sets a number of cookies used to collect data. This solution uses the `_ga` cookie for `USER_ID`. The `_ga` cookie is used to identify unique users.
+    - Google analytics sets a number of cookies used to collect data. This solution uses the `_ga` cookie for `USER_ID`. The `_ga` cookie is used to identify unique users and lasts for 2 years.
 - ITEM_ID
     - This scenario uses the URL of the item as `ITEM_ID`
 
