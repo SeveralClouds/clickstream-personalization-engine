@@ -3,7 +3,7 @@ var url = window.location.href
 var itemId = url.replace(/^https?:\/\//i, '');
 var gaUserId = document.cookie.match(/_ga=(.+?);/)[1].split('.').slice(-2).join(".")
 
-var host = "https://m.sevc.link"
+var host = "https://agri.clientpoc.sevc.link"
 
 fetch(host + "/collect", {
     method: "POST",

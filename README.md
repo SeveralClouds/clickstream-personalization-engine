@@ -44,7 +44,7 @@ AWS Personalize supports User segmentation with two recipes:
 1. Example snippet for getting recommendations
 ```
 window.addEventListener("load", () => {
-        fetch("https://g2mom962li.execute-api.eu-central-1.amazonaws.com/prod/recommendations", {
+        fetch("https://agri.clientpoc.sevc.link/recommendations", {
             method: "POST",
             body: JSON.stringify({
                 'X-GA-Cookie': Cookies.get("_ga")
@@ -59,7 +59,7 @@ window.addEventListener("load", () => {
 2. Example snippet for real time updates of the existing solution
 ```
 window.addEventListener("load", () => {
-    fetch("https://w47uoo58fg.execute-api.eu-central-1.amazonaws.com/prod/collect", {
+    fetch("https://agri.clientpoc.sevc.link/collect", {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
@@ -90,7 +90,7 @@ window.addEventListener("load", () => {
         var itemId = url.replace(/^https?:\/\//i, '');
         var gaUserId = document.cookie.match(/_ga=(.+?);/)[1].split('.').slice(-2).join(".")
         
-        var host = "https://m.sevc.link"
+        var host = "https://agri.clientpoc.sevc.link"
         
         fetch(host + "/collect", {
             method: "POST",
